@@ -1,7 +1,7 @@
 import * as Types from "../Types"
 
 export type DamageModifierSubType
-  = "all"
+  = Types.All
   | Types.DamageTypes
   | Types.ExtraDamageTypes
   | Types.AttackTypes
