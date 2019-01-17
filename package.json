@@ -1,6 +1,7 @@
 {
   "name": "open-rpg-5e",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "docs": "typedoc --excludePrivate --excludeProtected --theme markdown --out ./docs ./src"
   },
