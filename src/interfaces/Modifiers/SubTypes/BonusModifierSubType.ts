@@ -16,10 +16,15 @@ export type BonusModifierSubType
   | Types.ProficiencyTypes
   | Types.RangeTypes
   | Types.MiscTypes
-  | "choose-ability-score"
+  | "choose-ability-score" // TODO: Make this work
 
-export enum BonusModifierSubTypeOLD {
-  // Ability Scores
+export type ChooseAbilityScores = Array<Types.AbilityScoreTypes>
+
+/* Test */
+const testChooseAbilityScores: ChooseAbilityScores = [Types.AbilityScoreTypes.Charisma]
+
+
+// Ability Scores
   // StrengthAbilityChecks = "strength-ability-checks",
   // StrengthAttacks = "strength-attacks",
   // StrengthSavingThrows = "strength-saving-throws",
@@ -140,9 +145,3 @@ export enum BonusModifierSubTypeOLD {
   // Magic = "magic",
   // ShieldACOnDexSaves = "shield-ac-on-dex-saves",
   // WeaponAttackRangeMultiplier = "weapon-attack-range-multiplier",
-}
-
-export type ChooseAbilityScores = Array<Types.AbilityScoreTypes>
-
-/* Test */
-const testChooseAbilityScores: ChooseAbilityScores = [Types.AbilityScoreTypes.Charisma]
