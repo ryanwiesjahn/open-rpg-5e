@@ -6,7 +6,18 @@ export type SetModifierSubType
   | Types.AbilityScoreTypes
   | Types.SpeedTypes
   | Types.InnateSpeedType
-  | Types.WeaponAttackTypes
+  | Extract<Types.ArmorClassTypes, 
+      Types.ArmorClassTypes.ArmorClass
+      | Types.ArmorClassTypes.UnarmoredArmorClass
+    >
+  | Extract<Types.MiscTypes, 
+      Types.MiscTypes.ACMaxDexModifier
+      | Types.MiscTypes.ExtraAttacks
+      | Types.MiscTypes.MinimumBaseArmor
+    >
+
+/* Testing */
+const test: SetModifierSubType = Types.ArmorClassTypes.UnarmoredArmorClass
 
 
 // Ability Score Types
@@ -31,9 +42,11 @@ export type SetModifierSubType
 // Innate Speed (Swimming),
 // Innate Speed (Walking),
 
-// TODO: ADD THESE
-// Minimum Base Armor,
-// AC Max Dex Modifier,
+// Armor Class (Partial)
 // Armor Class,
-// Extra Attacks,
 // Unarmored Armor Class,
+
+// Misc (Partial)
+// AC Max Dex Modifier,
+// Extra Attacks,
+// Minimum Base Armor,
