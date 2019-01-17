@@ -1,5 +1,5 @@
 import * as SubTypes from "./SubTypes"
-import * as Types from "./../Types"
+import * as Types from "./Types"
 
 export interface Modifier<TType extends Types.ModifierTypes> {
   type: TType
