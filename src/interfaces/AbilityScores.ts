@@ -7,3 +7,5 @@ export interface AbilityScores {
   wisdom: number
   charisma: number
 }
+
+export type AbilityScoreType = keyof AbilityScores

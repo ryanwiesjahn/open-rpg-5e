@@ -1,3 +1,4 @@
+import { AbilityScores, AbilityScoreType } from "../../AbilityScores";
 
 export enum BonusModifierType {
   // Ability Scores
@@ -82,24 +83,24 @@ export enum BonusModifierType {
   HalfProficiency = "half-proficiency",
   ProficiencyBonus = "proficiency-bonus",
   TwiceProficiencyBonus = "twice-proficiency-bonus",
-  // Choose Ability Scores
+  // Choose Ability Scores   // TODO: Can all this be condensed?
   ChooseAnAbilityScore = "choose-an-ability-score",
-  ChooseConstitutionOrIntelligence = "choose-constitution-or-intelligence",   // TODO: Can all this be condensed?
-  ChooseConstitutionOrWisdom = "choose-constitution-or-wisdom",
-  ChooseDexterityOrCharisma = "choose-dexterity-or-charisma",
-  ChooseDexterityOrConstitution = "choose-dexterity-or-constitution",
-  ChooseDexterityOrIntelligence = "choose-dexterity-or-intelligence",
-  ChooseDexterityOrWisdom = "choose-dexterity-or-wisdom",
-  ChooseDexterityConstitutionOrCharisma = "choose-dexterity-constitution-or-charisma",
-  ChooseDexterityIntelligenceWisdomOrCharisma = "choose-dexterity-intelligence-wisdom-or-charisma",
-  ChooseIntelligenceOrCharisma = "choose-intelligence-or-charisma",
-  ChooseIntelligenceOrWisdom = "choose-intelligence-or-wisdom",
-  ChooseStrengthOrConstitution = "choose-strength-or-constitution",
-  ChooseStrengthOrDexterity = "choose-strength-or-dexterity",
-  ChooseStrengthOrWisdom = "choose-strength-or-wisdom",
-  ChooseStrengthConstitutionOrCharisma = "choose-strength-constitution-or-charisma",
-  ChooseStrengthConstitutionOrDexterity = "choose-strength-constitution-or-dexterity",
-  ChooseStrengthDexterityOrWisdom = "choose-strength-dexterity-or-wisdom",
+  // ChooseConstitutionOrIntelligence = "choose-constitution-or-intelligence",
+  // ChooseConstitutionOrWisdom = "choose-constitution-or-wisdom",
+  // ChooseDexterityOrCharisma = "choose-dexterity-or-charisma",
+  // ChooseDexterityOrConstitution = "choose-dexterity-or-constitution",
+  // ChooseDexterityOrIntelligence = "choose-dexterity-or-intelligence",
+  // ChooseDexterityOrWisdom = "choose-dexterity-or-wisdom",
+  // ChooseDexterityConstitutionOrCharisma = "choose-dexterity-constitution-or-charisma",
+  // ChooseDexterityIntelligenceWisdomOrCharisma = "choose-dexterity-intelligence-wisdom-or-charisma",
+  // ChooseIntelligenceOrCharisma = "choose-intelligence-or-charisma",
+  // ChooseIntelligenceOrWisdom = "choose-intelligence-or-wisdom",
+  // ChooseStrengthOrConstitution = "choose-strength-or-constitution",
+  // ChooseStrengthOrDexterity = "choose-strength-or-dexterity",
+  // ChooseStrengthOrWisdom = "choose-strength-or-wisdom",
+  // ChooseStrengthConstitutionOrCharisma = "choose-strength-constitution-or-charisma",
+  // ChooseStrengthConstitutionOrDexterity = "choose-strength-constitution-or-dexterity",
+  // ChooseStrengthDexterityOrWisdom = "choose-strength-dexterity-or-wisdom",
   // Checks
   AbilityChecks = "ability-checks",
   SavingThrows = "saving-throws",
@@ -112,3 +113,8 @@ export enum BonusModifierType {
   ShieldACOnDexSaves = "shield-ac-on-dex-saves",
   WeaponAttackRangeMultiplier = "weapon-attack-range-multiplier",
 }
+
+export type ChooseAbilityScores = Array<AbilityScoreType>
+
+/* Test */
+const testChooseAbilityScores: ChooseAbilityScores = ["charisma", "dexterity"]
