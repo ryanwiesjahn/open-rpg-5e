@@ -13,7 +13,7 @@ export type ModifierSubType<TType> =
   TType extends Types.ModifierTypes.Disadvantage ? SubTypes.AdvantageModifierSubType :
   TType extends Types.ModifierTypes.Resistance ? SubTypes.DamageModifierSubType :
   TType extends Types.ModifierTypes.Immunity ? SubTypes.ImmunityModifierSubType :
-  TType extends Types.ModifierTypes.Vulnerability ? undefined :
+  TType extends Types.ModifierTypes.Vulnerability ? SubTypes.VulnerabilityModifierSubType :
   TType extends Types.ModifierTypes.Sense ? undefined :
   TType extends Types.ModifierTypes.Set ? undefined :
   TType extends Types.ModifierTypes.Language ? undefined :
