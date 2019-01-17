@@ -1,0 +1,22 @@
+
+export enum DamageModifierType {
+  Acid,
+  Bludgeoning,
+  Cold,
+  Fire,
+  Force,
+  Lightning,
+  Longbow,
+  MeleeWeaponAttacks,
+  NaturalAttacks,
+  Necrotic,
+  OneHandedMeleeAttacks,
+  Piercing,
+  Poison,
+  Psychic,
+  Radiant,
+  Shortbow,
+  Slashing,
+  Thunder,
+  UnarmedAttacks,
+}
