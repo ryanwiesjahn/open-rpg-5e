@@ -1,4 +1,4 @@
-import { AbilityScores } from "./AbilityScores"
+import { AbilityScores } from "./Stats/AbilityScores"
 
 export interface RacialTrait {
   name: string

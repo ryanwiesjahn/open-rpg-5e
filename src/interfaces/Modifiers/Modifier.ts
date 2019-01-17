@@ -1,4 +1,5 @@
-import * as SubTypes from "./SubTypes/"
+import * as SubTypes from "./SubTypes"
+import * as Types from "./../Types"
 
 export interface Modifier<TType extends ModifierType> {
   type: TType
@@ -71,5 +72,5 @@ export type ModifierSubType<TType> =
 /* Test */
 const testModifer: Modifier<ModifierType.Bonus> = {
   type: ModifierType.Bonus,
-  subType: SubTypes.BonusModifierSubType.Stealth,
+  subType: Types.SkillTypes.Stealth,
 }

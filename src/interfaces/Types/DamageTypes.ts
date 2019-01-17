@@ -1,5 +1,5 @@
 
-export enum DamageType {
+export enum DamageTypes {
   Acid = "acid",
   Bludgeoning = "bludgeoning",
   Cold = "cold",
@@ -14,4 +14,9 @@ export enum DamageType {
   Radiant = "radiant",
   Slashing = "slashing",
   Thunder = "thunder",
+}
+
+export enum ExtraDamageTypes {
+  PhysicalDamageFromNonmagicWeapons = "physical-damage-from-nonmagic-weapons",
+  TrapDamage = "trap-damage",
 }
