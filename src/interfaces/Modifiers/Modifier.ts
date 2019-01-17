@@ -15,7 +15,7 @@ export type ModifierSubType<TType> =
   TType extends Types.ModifierTypes.Immunity ? SubTypes.ImmunityModifierSubType :
   TType extends Types.ModifierTypes.Vulnerability ? SubTypes.VulnerabilityModifierSubType :
   TType extends Types.ModifierTypes.Sense ? SubTypes.SenseModifierSubType :
-  TType extends Types.ModifierTypes.Set ? undefined :
+  TType extends Types.ModifierTypes.Set ? SubTypes.SetModifierSubType :
   TType extends Types.ModifierTypes.Language ? undefined :
   TType extends Types.ModifierTypes.Proficiency ? undefined :
   TType extends Types.ModifierTypes.HalfProficiency ? undefined :

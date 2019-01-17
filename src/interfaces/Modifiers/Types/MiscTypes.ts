@@ -8,6 +8,7 @@ export enum MiscTypes {
   ExtraAttacks = "extra-attacks",
   ShieldACOnDexSaves = "shield-ac-on-dex-saves",
   UnarmoredMovement = "unarmored-movement",
+  MinimumBaseArmor = "minimum-base-armor",
   ClericCantripDamage = "cleric-cantrip-damage",
   EldritchBlastDamage = "eldritch-blast-damage",
 }
