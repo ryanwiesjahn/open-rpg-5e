@@ -1,4 +1,4 @@
-import { BonusModifierType } from "./Types/BonusModifierType";
+import * as SubTypes from "./SubTypes/"
 
 export interface Modifier<TType extends ModifierType> {
   type: TType
@@ -38,38 +38,38 @@ export enum ModifierType {
 }
 
 export type ModifierSubType<TType> = 
-  TType extends ModifierType.Bonus ? BonusModifierType : 
-  TType extends ModifierType.Damage ? BonusModifierType : 
-  TType extends ModifierType.Advantage ? BonusModifierType :
-  TType extends ModifierType.Disadvantage ? BonusModifierType :
-  TType extends ModifierType.Resistance ? BonusModifierType :
-  TType extends ModifierType.Immunity ? BonusModifierType :
-  TType extends ModifierType.Vulnerability ? BonusModifierType :
-  TType extends ModifierType.Sense ? BonusModifierType :
-  TType extends ModifierType.Set ? BonusModifierType :
-  TType extends ModifierType.Language ? BonusModifierType :
-  TType extends ModifierType.Proficiency ? BonusModifierType :
-  TType extends ModifierType.HalfProficiency ? BonusModifierType :
-  TType extends ModifierType.HalfProficiencyRoundUp ? BonusModifierType :
-  TType extends ModifierType.TwiceProficiency ? BonusModifierType :
-  TType extends ModifierType.Expertise ? BonusModifierType :
-  TType extends ModifierType.Feat ? BonusModifierType :
-  TType extends ModifierType.CarryingCapacity ? BonusModifierType :
-  TType extends ModifierType.NaturalWeapon ? BonusModifierType :
-  TType extends ModifierType.SpeedReduction ? BonusModifierType :
-  TType extends ModifierType.MeleeWeaponAttack ? BonusModifierType :
-  TType extends ModifierType.RangedWeaponAttack ? BonusModifierType :
-  TType extends ModifierType.WeaponProperty ? BonusModifierType :
-  TType extends ModifierType.FavoredEnemy ? BonusModifierType :
-  TType extends ModifierType.Ignore ? BonusModifierType :
-  TType extends ModifierType.EldritchBlast ? BonusModifierType :
-  TType extends ModifierType.ReplaceDamageType ? BonusModifierType :
-  TType extends ModifierType.Protection ? BonusModifierType :
-  TType extends ModifierType.StackingBonus ? BonusModifierType :
+  TType extends ModifierType.Bonus ? SubTypes.BonusModifierSubType : 
+  TType extends ModifierType.Damage ? SubTypes.DamageModifierSubType : 
+  TType extends ModifierType.Advantage ? SubTypes.AdvantageModifierSubType :
+  TType extends ModifierType.Disadvantage ? undefined :
+  TType extends ModifierType.Resistance ? undefined :
+  TType extends ModifierType.Immunity ? undefined :
+  TType extends ModifierType.Vulnerability ? undefined :
+  TType extends ModifierType.Sense ? undefined :
+  TType extends ModifierType.Set ? undefined :
+  TType extends ModifierType.Language ? undefined :
+  TType extends ModifierType.Proficiency ? undefined :
+  TType extends ModifierType.HalfProficiency ? undefined :
+  TType extends ModifierType.HalfProficiencyRoundUp ? undefined :
+  TType extends ModifierType.TwiceProficiency ? undefined :
+  TType extends ModifierType.Expertise ? undefined :
+  TType extends ModifierType.Feat ? undefined :
+  TType extends ModifierType.CarryingCapacity ? undefined :
+  TType extends ModifierType.NaturalWeapon ? undefined :
+  TType extends ModifierType.SpeedReduction ? undefined :
+  TType extends ModifierType.MeleeWeaponAttack ? undefined :
+  TType extends ModifierType.RangedWeaponAttack ? undefined :
+  TType extends ModifierType.WeaponProperty ? undefined :
+  TType extends ModifierType.FavoredEnemy ? undefined :
+  TType extends ModifierType.Ignore ? undefined :
+  TType extends ModifierType.EldritchBlast ? undefined :
+  TType extends ModifierType.ReplaceDamageType ? undefined :
+  TType extends ModifierType.Protection ? undefined :
+  TType extends ModifierType.StackingBonus ? undefined :
   null
 
 /* Test */
 const testModifer: Modifier<ModifierType.Bonus> = {
   type: ModifierType.Bonus,
-  subType: BonusModifierType.Stealth,
+  subType: SubTypes.BonusModifierSubType.Stealth,
 }

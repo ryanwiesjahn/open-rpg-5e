@@ -1,6 +1,6 @@
-import { AbilityScores, AbilityScoreType } from "../../AbilityScores";
+import { AbilityScoreType } from "../../AbilityScores";
 
-export enum BonusModifierType {
+export enum BonusModifierSubType {
   // Ability Scores
   StrengthAbilityChecks = "strength-ability-checks",
   StrengthAttacks = "strength-attacks",
