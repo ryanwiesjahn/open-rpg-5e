@@ -1,0 +1,14 @@
+{
+  "name": "open-rpg-5e",
+  "version": "0.0.1",
+  "scripts": {
+    "docs": "typedoc --excludePrivate --excludeProtected --theme markdown --out ./docs ./src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tslib": "^1.9.3",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.1.21",
+    "typescript": "^3.2.2"
+  }
+}
