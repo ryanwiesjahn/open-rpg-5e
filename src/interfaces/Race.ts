@@ -24,6 +24,7 @@ export interface Speed {
 }
 
 export interface Race {
+  id: string
   name: string
   snippet: string // Condensed, data-driven summary
   description: string
