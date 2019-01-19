@@ -16,12 +16,12 @@ export type ModifierSubType<TType> =
   TType extends Types.ModifierTypes.Vulnerability ? SubTypes.VulnerabilityModifierSubType :
   TType extends Types.ModifierTypes.Sense ? SubTypes.SenseModifierSubType :
   TType extends Types.ModifierTypes.Set ? SubTypes.SetModifierSubType :
-  TType extends Types.ModifierTypes.Language ? undefined :
-  TType extends Types.ModifierTypes.Proficiency ? undefined :
-  TType extends Types.ModifierTypes.HalfProficiency ? undefined :
-  TType extends Types.ModifierTypes.HalfProficiencyRoundUp ? undefined :
-  TType extends Types.ModifierTypes.TwiceProficiency ? undefined :
-  TType extends Types.ModifierTypes.Expertise ? undefined :
+  TType extends Types.ModifierTypes.Language ? SubTypes.LanguageModifierSubType :
+  TType extends Types.ModifierTypes.Proficiency ? SubTypes.ProficiencyModifierSubType :
+  TType extends Types.ModifierTypes.HalfProficiency ? SubTypes.ProficiencyModifierSubType :
+  TType extends Types.ModifierTypes.HalfProficiencyRoundUp ? SubTypes.ProficiencyModifierSubType :
+  TType extends Types.ModifierTypes.TwiceProficiency ? SubTypes.ProficiencyModifierSubType :
+  TType extends Types.ModifierTypes.Expertise ? SubTypes.ExpertiseModifierSubType :
   TType extends Types.ModifierTypes.Feat ? undefined :
   TType extends Types.ModifierTypes.CarryingCapacity ? undefined :
   TType extends Types.ModifierTypes.NaturalWeapon ? undefined :
