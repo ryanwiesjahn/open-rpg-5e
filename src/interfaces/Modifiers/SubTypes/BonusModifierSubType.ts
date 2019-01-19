@@ -16,7 +16,7 @@ export type BonusModifierSubType
   | Types.ProficiencyTypes
   | Types.RangeTypes
   | Types.MiscTypes
-  | "choose-ability-score" // TODO: Make this work
+  | "choose-ability-score"   // TODO: Make this work
 
 export type ChooseAbilityScores = Array<Types.AbilityScoreTypes>
 

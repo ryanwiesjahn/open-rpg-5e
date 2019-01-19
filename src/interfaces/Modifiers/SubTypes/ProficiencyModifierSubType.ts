@@ -7,6 +7,8 @@ export type ProficiencyModifierSubType
   | Exclude<Types.SavingThrowTypes, Types.SavingThrowTypes.DeathSavingThrows>
   | Types.AttackTypes
   | Types.AbilityAttackTypes
+  | "choose-equipment"   // TODO: Make this work
+  | "specific-equipment"   // TODO: Make this work
 
 
 
