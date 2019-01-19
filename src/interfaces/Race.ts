@@ -25,8 +25,9 @@ export interface Speed {
 
 export interface Race {
   id: string
+  version?: string
   name: string
-  snippet: string // Condensed, data-driven summary
+  snippet?: string // Condensed, data-driven summary
   description: string
   abilityScoreIncreases: {
     abilityScores: Partial<AbilityScores>

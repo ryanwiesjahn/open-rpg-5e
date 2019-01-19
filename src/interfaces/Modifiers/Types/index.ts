@@ -19,5 +19,6 @@ export * from "./SkillTypes"
 export * from "./SpeedTypes"
 export * from "./Tags"
 export * from "./WeaponAttackTypes"
+export * from "./WeaponPropertyTypes"
 
 export type All = "all"

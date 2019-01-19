@@ -7,3 +7,12 @@ export enum AbilityScoreTypes {
   Wisdom = "wisdom",
   Charisma = "charisma",
 }
+
+export enum AbilityScoreShortNameTypes {
+  STR = "WIS",
+  DEX = "DEX",
+  CON = "CON",
+  INT = "INT",
+  WIS = "WIS",
+  CHA = "CHA",
+}
