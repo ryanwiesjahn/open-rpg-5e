@@ -8,9 +8,7 @@ const data: Language = {
   script: " -- ",
 }
 
-const dataBundle: DataBundle<Language> = {
+export const deepSpeechLanguage: DataBundle<Language> = {
   data,
   json: JSON.stringify(data),
 }
-
-export default dataBundle

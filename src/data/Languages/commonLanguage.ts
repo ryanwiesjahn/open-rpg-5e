@@ -8,9 +8,7 @@ const data: Language = {
   script: "Common",
 }
 
-const dataBundle: DataBundle<Language> = {
+export const commonLanguage: DataBundle<Language> = {
   data,
   json: JSON.stringify(data),
 }
-
-export default dataBundle
