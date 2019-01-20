@@ -3,7 +3,7 @@ import { DataBundle } from "../../DataBundle"
 import { ArmorEquipment } from '../../../interfaces/Equipment/ArmorEquipment';
 
 const data: ArmorEquipment = {
-  id: "UUID",
+  id: "f0cad4ba-c797-4ac7-9334-381d5cc389fc",
   version: "1.0",
   name: "Chain Mail Armor",
   type: Types.ArmorEquipmentTypes.HeavyArmor,

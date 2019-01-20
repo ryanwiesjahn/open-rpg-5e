@@ -3,7 +3,7 @@ import { DataBundle } from "../../DataBundle"
 import { ArmorEquipment } from '../../../interfaces/Equipment/ArmorEquipment';
 
 const data: ArmorEquipment = {
-  id: "UUID",
+  id: "8fdd4163-4b3a-47ad-84d1-7ffb0a58cb3d",
   version: "1.0",
   name: "Studded Leather Armor",
   type: Types.ArmorEquipmentTypes.LightArmor,
