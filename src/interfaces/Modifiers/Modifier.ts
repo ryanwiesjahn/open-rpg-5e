@@ -22,7 +22,7 @@ export type ModifierSubType<TType>
   : TType extends Types.ModifierTypes.HalfProficiencyRoundUp ? SubTypes.ProficiencyModifierSubType
   : TType extends Types.ModifierTypes.TwiceProficiency ? SubTypes.ProficiencyModifierSubType
   : TType extends Types.ModifierTypes.Expertise ? SubTypes.ExpertiseModifierSubType
-  : TType extends Types.ModifierTypes.Feat ? undefined
+  : TType extends Types.ModifierTypes.Feat ? SubTypes.FeatModifierSubType
   : TType extends Types.ModifierTypes.CarryingCapacity ? undefined
   : TType extends Types.ModifierTypes.NaturalWeapon ? undefined
   : TType extends Types.ModifierTypes.SpeedReduction ? undefined
