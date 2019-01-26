@@ -1,4 +1,4 @@
-import * as Types from "../../../interfaces/Modifiers/Types"
+import * as Types from "../../../interfaces/Types"
 import { DataBundle } from "../../DataBundle"
 import { ArmorEquipment } from '../../../interfaces/Equipment/ArmorEquipment';
 

@@ -1,5 +1,5 @@
 
-export enum AbilityChecks {
+export enum AbilityCheckTypes {
   AbilityChecks = "ability-checks",
   StrengthAbilityChecks = "strength-ability-checks",
   ConstitutionAbilityChecks = "constitution-ability-checks",

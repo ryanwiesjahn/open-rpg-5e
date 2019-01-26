@@ -1,5 +1,5 @@
 import * as SubTypes from "./SubTypes"
-import * as Types from "./Types"
+import * as Types from "../Types"
 
 export interface Modifier<TType extends Types.ModifierTypes> {
   type: TType
@@ -23,7 +23,7 @@ export type ModifierSubType<TType>
   : TType extends Types.ModifierTypes.TwiceProficiency ? SubTypes.ProficiencyModifierSubType
   : TType extends Types.ModifierTypes.Expertise ? SubTypes.ExpertiseModifierSubType
   : TType extends Types.ModifierTypes.Feat ? SubTypes.FeatModifierSubType
-  : TType extends Types.ModifierTypes.CarryingCapacity ? undefined
+  : TType extends Types.ModifierTypes.CarryingCapacity ? SubTypes.CarryingCapacityModifierSubType
   : TType extends Types.ModifierTypes.NaturalWeapon ? undefined
   : TType extends Types.ModifierTypes.SpeedReduction ? undefined
   : TType extends Types.ModifierTypes.MeleeWeaponAttack ? undefined

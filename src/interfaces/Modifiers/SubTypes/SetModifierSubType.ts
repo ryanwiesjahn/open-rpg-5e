@@ -1,5 +1,5 @@
 
-import * as Types from "../Types"
+import * as Types from "../../Types"
 
 export type SetModifierSubType
   = Types.All

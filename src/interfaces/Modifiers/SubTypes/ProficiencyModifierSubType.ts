@@ -1,7 +1,7 @@
-import * as Types from "../Types"
+import * as Types from "../../Types"
 
 export type ProficiencyModifierSubType
-  = Types.AbilityChecks
+  = Types.AbilityCheckTypes
   | Types.SkillTypes
   | Types.OtherSkillTypes
   | Exclude<Types.SavingThrowTypes, Types.SavingThrowTypes.DeathSavingThrows>

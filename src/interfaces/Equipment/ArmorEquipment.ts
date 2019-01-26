@@ -1,4 +1,4 @@
-import * as Types from "./../Modifiers/Types"
+import * as Types from "./../Types"
 import { Equipment } from './Equipment'
 import { ArmorClass } from '../Measurements/ArmorClass'
 

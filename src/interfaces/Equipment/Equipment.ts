@@ -1,5 +1,5 @@
 import { Cost } from './../Measurements/Cost'
-import * as Types from "./../Modifiers/Types"
+import * as Types from "./../Types"
 import { Weight } from '../Measurements/Weight'
 
 export interface Equipment {

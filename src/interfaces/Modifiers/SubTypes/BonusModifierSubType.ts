@@ -1,8 +1,8 @@
-import * as Types from "../Types"
+import * as Types from "../../Types"
 
 export type BonusModifierSubType
   = Types.AbilityScoreTypes
-  | Types.AbilityChecks
+  | Types.AbilityCheckTypes
   | Types.AbilityAttackTypes
   | Types.SavingThrowTypes
   | Types.SkillTypes

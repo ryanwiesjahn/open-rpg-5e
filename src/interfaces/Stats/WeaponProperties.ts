@@ -1,4 +1,4 @@
-import * as Types from "../Modifiers/Types"
+import * as Types from "../Types"
 import { Roll } from '../Measurements/Roll'
 
 export interface WeaponProperty {

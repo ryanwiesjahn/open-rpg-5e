@@ -1,5 +1,6 @@
 export * from "./AdvantageModifierSubType"
 export * from "./BonusModifierSubType"
+export * from "./CarryingCapacityModifierSubType"
 export * from "./DamageModifierSubType"
 export * from "./ExpertiseModifierSubType"
 export * from "./FeatModifierSubType"

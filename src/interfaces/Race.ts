@@ -1,26 +1,11 @@
+import * as Types from "./Types"
 import { AbilityScores } from "./Stats/AbilityScores"
+import { Speed } from './Stats/Speed'
 
 export interface RacialTrait {
   name: string
   snippet: string // Condensed, data-driven summary
   description: string
-}
-
-export enum RacialSize {
-  Tiny = "tiny",
-  Small = "small",
-  Medium = "medium",
-  Large = "large",
-  Huge = "huge",
-  Gargantuan = "gargantuan",
-}
-
-export interface Speed {
-  walk?: number
-  burrow?: number
-  climb?: number
-  swim?: number
-  fly?: number
 }
 
 export interface Race {
@@ -34,12 +19,12 @@ export interface Race {
     description: string
   }
   size: {
-    racialSize: RacialSize
+    racialSize: Types.RacialSizeType
     description: string
   }
   age: string
   alignment: string
-  speed: string
+  speed: Speed
   languagesDescriptor: {
     languages: string[]
     description: string

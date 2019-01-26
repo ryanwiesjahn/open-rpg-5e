@@ -1,5 +1,5 @@
 import { AbilityScores } from "./interfaces/Stats/AbilityScores"
-import * as Types from './interfaces/Modifiers/Types'
+import * as Types from './interfaces/Types'
 
 export const getAbilityModifier = (abilityScore: number): number => {
   return Math.floor(((abilityScore - 10) / 2))

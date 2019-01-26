@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "docs": "typedoc --excludePrivate --excludeProtected --theme markdown --out ./docs ./src"
   },
   "dependencies": {},
