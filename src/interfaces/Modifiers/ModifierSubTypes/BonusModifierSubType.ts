@@ -14,6 +14,7 @@ export type BonusModifierSubType
   | Types.AttackTypes
   | Types.WeaponAttackTypes
   | Types.ProficiencyTypes
+  | Types.OtherProficiencyTypes
   | Types.RangeTypes
   | Types.MiscTypes
   | "choose-ability-score"   // TODO: Make this work

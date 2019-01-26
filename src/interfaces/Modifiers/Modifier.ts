@@ -1,44 +1,45 @@
-import * as SubTypes from "./SubTypes"
+import * as ModifierSubTypes from "./ModifierSubTypes"
+import { ModifierTypes } from "./ModifierTypes"
 import * as Types from "../Types"
 
-export interface Modifier<TType extends Types.ModifierTypes> {
+export interface Modifier<TType extends ModifierTypes> {
   type: TType
   subType: ModifierSubType<TType>
 }
 
 export type ModifierSubType<TType>
-  = TType extends Types.ModifierTypes.Bonus ? SubTypes.BonusModifierSubType
-  : TType extends Types.ModifierTypes.Damage ? SubTypes.DamageModifierSubType
-  : TType extends Types.ModifierTypes.Advantage ? SubTypes.AdvantageModifierSubType
-  : TType extends Types.ModifierTypes.Disadvantage ? SubTypes.AdvantageModifierSubType
-  : TType extends Types.ModifierTypes.Resistance ? SubTypes.DamageModifierSubType
-  : TType extends Types.ModifierTypes.Immunity ? SubTypes.ImmunityModifierSubType
-  : TType extends Types.ModifierTypes.Vulnerability ? SubTypes.VulnerabilityModifierSubType
-  : TType extends Types.ModifierTypes.Sense ? SubTypes.SenseModifierSubType
-  : TType extends Types.ModifierTypes.Set ? SubTypes.SetModifierSubType
-  : TType extends Types.ModifierTypes.Language ? SubTypes.LanguageModifierSubType
-  : TType extends Types.ModifierTypes.Proficiency ? SubTypes.ProficiencyModifierSubType
-  : TType extends Types.ModifierTypes.HalfProficiency ? SubTypes.ProficiencyModifierSubType
-  : TType extends Types.ModifierTypes.HalfProficiencyRoundUp ? SubTypes.ProficiencyModifierSubType
-  : TType extends Types.ModifierTypes.TwiceProficiency ? SubTypes.ProficiencyModifierSubType
-  : TType extends Types.ModifierTypes.Expertise ? SubTypes.ExpertiseModifierSubType
-  : TType extends Types.ModifierTypes.Feat ? SubTypes.FeatModifierSubType
-  : TType extends Types.ModifierTypes.CarryingCapacity ? SubTypes.CarryingCapacityModifierSubType
-  : TType extends Types.ModifierTypes.NaturalWeapon ? undefined
-  : TType extends Types.ModifierTypes.SpeedReduction ? undefined
-  : TType extends Types.ModifierTypes.MeleeWeaponAttack ? undefined
-  : TType extends Types.ModifierTypes.RangedWeaponAttack ? undefined
-  : TType extends Types.ModifierTypes.WeaponProperty ? undefined
-  : TType extends Types.ModifierTypes.FavoredEnemy ? undefined
-  : TType extends Types.ModifierTypes.Ignore ? undefined
-  : TType extends Types.ModifierTypes.EldritchBlast ? undefined
-  : TType extends Types.ModifierTypes.ReplaceDamageType ? undefined
-  : TType extends Types.ModifierTypes.Protection ? undefined
-  : TType extends Types.ModifierTypes.StackingBonus ? undefined
+  = TType extends ModifierTypes.Bonus ? ModifierSubTypes.BonusModifierSubType
+  : TType extends ModifierTypes.Damage ? ModifierSubTypes.DamageModifierSubType
+  : TType extends ModifierTypes.Advantage ? ModifierSubTypes.AdvantageModifierSubType
+  : TType extends ModifierTypes.Disadvantage ? ModifierSubTypes.AdvantageModifierSubType
+  : TType extends ModifierTypes.Resistance ? ModifierSubTypes.DamageModifierSubType
+  : TType extends ModifierTypes.Immunity ? ModifierSubTypes.ImmunityModifierSubType
+  : TType extends ModifierTypes.Vulnerability ? ModifierSubTypes.VulnerabilityModifierSubType
+  : TType extends ModifierTypes.Sense ? ModifierSubTypes.SenseModifierSubType
+  : TType extends ModifierTypes.Set ? ModifierSubTypes.SetModifierSubType
+  : TType extends ModifierTypes.Language ? ModifierSubTypes.LanguageModifierSubType
+  : TType extends ModifierTypes.Proficiency ? ModifierSubTypes.ProficiencyModifierSubType
+  : TType extends ModifierTypes.HalfProficiency ? ModifierSubTypes.ProficiencyModifierSubType
+  : TType extends ModifierTypes.HalfProficiencyRoundUp ? ModifierSubTypes.ProficiencyModifierSubType
+  : TType extends ModifierTypes.TwiceProficiency ? ModifierSubTypes.ProficiencyModifierSubType
+  : TType extends ModifierTypes.Expertise ? ModifierSubTypes.ExpertiseModifierSubType
+  : TType extends ModifierTypes.Feat ? ModifierSubTypes.FeatModifierSubType
+  : TType extends ModifierTypes.CarryingCapacity ? ModifierSubTypes.CarryingCapacityModifierSubType
+  : TType extends ModifierTypes.NaturalWeapon ? undefined
+  : TType extends ModifierTypes.SpeedReduction ? undefined
+  : TType extends ModifierTypes.MeleeWeaponAttack ? undefined
+  : TType extends ModifierTypes.RangedWeaponAttack ? undefined
+  : TType extends ModifierTypes.WeaponProperty ? undefined
+  : TType extends ModifierTypes.FavoredEnemy ? undefined
+  : TType extends ModifierTypes.Ignore ? undefined
+  : TType extends ModifierTypes.EldritchBlast ? undefined
+  : TType extends ModifierTypes.ReplaceDamageType ? undefined
+  : TType extends ModifierTypes.Protection ? undefined
+  : TType extends ModifierTypes.StackingBonus ? undefined
   : null
 
 /* Test */
-const testModifer: Modifier<Types.ModifierTypes.Bonus> = {
-  type: Types.ModifierTypes.Bonus,
+const testModifer: Modifier<ModifierTypes.Bonus> = {
+  type: ModifierTypes.Bonus,
   subType: Types.SkillTypes.Stealth,
 }
