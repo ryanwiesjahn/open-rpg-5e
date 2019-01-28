@@ -3,19 +3,28 @@ import * as ModifierSubTypes from "../ModifierSubTypes"
 import { Modifier } from "../Modifier"
 import * as Types from "../../Types"
 
+type MainExpertiseModifierSubTypes
+  = Types.AbilityCheckTypes
+  | Types.SkillTypes
+  | Types.OtherSkillTypes
+  | Exclude<Types.SavingThrowTypes, Types.SavingThrowTypes.DeathSavingThrows>
+  | Types.AttackTypes
+  | Types.AbilityAttackTypes
+  | Types.WeaponAttackTypes
+
 export interface ExpertiseModifier extends Modifier<ModifierTypes.Expertise> {
-  subType: ModifierSubTypes.ExpertiseModifierSubType
+  subType: MainExpertiseModifierSubTypes
 }
 
 // TODO: Make this work
-export interface ChooseEquipmentExpertiseModifier extends ExpertiseModifier {
+export interface ChooseEquipmentExpertiseModifier extends Modifier<ModifierTypes.Expertise> {
   subType: Types.SelectTypes.ChooseEquipment
   equipmentId: string
   equipmentChoiceIds: string[]
 }
 
 // TODO: Make this work
-export interface SpecificEquipmentExpertiseModifier extends ExpertiseModifier {
+export interface SpecificEquipmentExpertiseModifier extends Modifier<ModifierTypes.Expertise> {
   subType: Types.SelectTypes.SpecificEquipment
   equipmentId: string
 }
