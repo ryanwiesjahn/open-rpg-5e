@@ -26,10 +26,10 @@ export type ModifierSubType<TType>
   : TType extends ModifierTypes.Feat ? ModifierSubTypes.FeatModifierSubType
   : TType extends ModifierTypes.CarryingCapacity ? ModifierSubTypes.CarryingCapacityModifierSubType
   : TType extends ModifierTypes.NaturalWeapon ? ModifierSubTypes.NaturalWeaponModifierSubType
-  : TType extends ModifierTypes.SpeedReduction ? undefined
-  : TType extends ModifierTypes.MeleeWeaponAttack ? undefined
-  : TType extends ModifierTypes.RangedWeaponAttack ? undefined
-  : TType extends ModifierTypes.WeaponProperty ? undefined
+  // : TType extends ModifierTypes.SpeedReduction ? undefined   // Copied from DnDB. Will Set with subType Speed not work?
+  : TType extends ModifierTypes.MeleeWeaponAttack ? ModifierSubTypes.MeleeWeaponAttackModifierSubType
+  : TType extends ModifierTypes.RangedWeaponAttack ? ModifierSubTypes.RangedWeaponAttackModifierSubType
+  : TType extends ModifierTypes.WeaponProperty ? ModifierSubTypes.WeaponPropertyModifierSubType
   : TType extends ModifierTypes.FavoredEnemy ? undefined
   : TType extends ModifierTypes.Ignore ? undefined
   : TType extends ModifierTypes.EldritchBlast ? undefined
