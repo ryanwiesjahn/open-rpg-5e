@@ -19,7 +19,7 @@ export enum ModifierTypes {
   CarryingCapacity = "carrying-capacity",
   NaturalWeapon = "natural-weapon",
   // StealthDisadvantage = "stealth-disadvantage",   // Copied from DnDB. Will Disadvantage with subType Stealth not work?
-  // SpeedReduction = "speed-reduction",   // Copied from DnDB. Will Set with subType Speed not work?
+  SpeedReduction = "speed-reduction",
   MeleeWeaponAttack = "melee-weapon-attack",
   RangedWeaponAttack = "ranged-weapon-attack",
   WeaponProperty = "weapon-property",
