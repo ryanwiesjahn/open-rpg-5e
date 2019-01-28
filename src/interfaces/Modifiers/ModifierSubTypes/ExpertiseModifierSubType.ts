@@ -8,8 +8,8 @@ export type ExpertiseModifierSubType
   | Types.AttackTypes
   | Types.AbilityAttackTypes
   | Types.WeaponAttackTypes
-  | "choose-equipment"   // TODO: Make this work
-  | "specific-equipment"   // TODO: Make this work
+  | Types.SelectTypes.ChooseEquipment
+  | Types.SelectTypes.SpecificEquipment
 
 
 // TODO: HANDLE THESE

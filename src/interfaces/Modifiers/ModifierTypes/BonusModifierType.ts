@@ -13,7 +13,7 @@ export interface AbilityScoreBonusModifier extends BonusModifier<Types.AbilitySc
   amount: number
 }
 
-export interface ChooseAbilityScoreBonusModifier extends BonusModifier<"choose-ability-score"> {
+export interface ChooseAbilityScoreBonusModifier extends BonusModifier<Types.SelectTypes.ChooseAbilityScore> {
   // TODO: What is this? Needs to be finished
   abilityScores: ModifierSubTypes.ChooseAbilityScores
 }

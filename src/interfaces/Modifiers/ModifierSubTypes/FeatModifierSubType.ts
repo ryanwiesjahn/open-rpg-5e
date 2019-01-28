@@ -1,4 +1,5 @@
+import * as Types from "../../Types"
 
 export type FeatModifierSubType
-  = "choose-feat"   // TODO: Make this work
-  | "specific-feat"   // TODO: Make this work
+  = Types.SelectTypes.ChooseFeat   // TODO: Make this work
+  | Types.SelectTypes.SpecificFeat   // TODO: Make this work

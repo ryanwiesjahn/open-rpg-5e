@@ -1,8 +1,8 @@
 import * as Types from "../../Types"
 
 export type ImmunityModifierSubType
-  = Types.All
-  | Types.DamageTypes
+  = Types.DamageTypes
   | Types.ExtraDamageTypes
   | Types.ConditionTypes
   | Types.ExtraConditionTypes
+  | Types.SelectTypes.All
