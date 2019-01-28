@@ -3,7 +3,7 @@ export enum ProficiencyTypes {
   Proficiency = "proficiency",
   HalfProficiency = "half-proficiency",
   HalfProficiencyRoundUp = "half-proficiency-round-up",
-  TwiceProficiencyBonus = "twice-proficiency-bonus",
+  TwiceProficiency = "twice-proficiency",
 }
 
 export enum OtherProficiencyTypes {
