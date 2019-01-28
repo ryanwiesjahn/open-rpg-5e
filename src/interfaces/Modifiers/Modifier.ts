@@ -25,7 +25,7 @@ export type ModifierSubType<TType>
   : TType extends ModifierTypes.Expertise ? ModifierSubTypes.ExpertiseModifierSubType
   : TType extends ModifierTypes.Feat ? ModifierSubTypes.FeatModifierSubType
   : TType extends ModifierTypes.CarryingCapacity ? ModifierSubTypes.CarryingCapacityModifierSubType
-  : TType extends ModifierTypes.NaturalWeapon ? undefined
+  : TType extends ModifierTypes.NaturalWeapon ? ModifierSubTypes.NaturalWeaponModifierSubType
   : TType extends ModifierTypes.SpeedReduction ? undefined
   : TType extends ModifierTypes.MeleeWeaponAttack ? undefined
   : TType extends ModifierTypes.RangedWeaponAttack ? undefined

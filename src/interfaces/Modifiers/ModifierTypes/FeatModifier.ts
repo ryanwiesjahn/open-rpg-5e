@@ -7,11 +7,13 @@ interface FeatModifier<TSubType extends ModifierSubTypes.FeatModifierSubType> ex
   subType: TSubType
 }
 
+// TODO: Make this work
 export interface ChooseFeatModifier extends FeatModifier<Types.SelectTypes.ChooseFeat> {
   featId: string
   featChoiceIds: string[]
 }
 
+// TODO: Make this work
 export interface SpecificFeatModifier extends FeatModifier<Types.SelectTypes.SpecificFeat> {
   featId: string
 }
