@@ -3,6 +3,7 @@ export * from "./BonusModifierSubType"
 export * from "./CarryingCapacityModifierSubType"
 export * from "./DamageModifierSubType"
 export * from "./ExpertiseModifierSubType"
+export * from './FavoredEnemyModifierSubType'
 export * from "./FeatModifierSubType"
 export * from "./ImmunityModifierSubType"
 export * from "./LanguageModifierSubType"

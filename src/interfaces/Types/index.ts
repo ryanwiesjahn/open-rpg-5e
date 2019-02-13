@@ -6,6 +6,7 @@ export * from "./AttackRollTypes"
 export * from "./AttackTypes"
 export * from "./ChangeTypes"
 export * from "./ConditionTypes"
+export * from './CreatureTypes'
 export * from "./DamageTypes"
 export * from "./EquipmentTypes"
 export * from "./HitPointTypes"

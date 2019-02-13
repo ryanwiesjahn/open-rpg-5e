@@ -30,7 +30,7 @@ export type ModifierSubType<TType>
   : TType extends ModifierTypes.MeleeWeaponAttack ? ModifierSubTypes.MeleeWeaponAttackModifierSubType
   : TType extends ModifierTypes.RangedWeaponAttack ? ModifierSubTypes.RangedWeaponAttackModifierSubType
   : TType extends ModifierTypes.WeaponProperty ? ModifierSubTypes.WeaponPropertyModifierSubType
-  : TType extends ModifierTypes.FavoredEnemy ? undefined
+  : TType extends ModifierTypes.FavoredEnemy ? ModifierSubTypes.FavoredEnemyModifierSubType
   : TType extends ModifierTypes.Ignore ? undefined
   : TType extends ModifierTypes.EldritchBlast ? undefined
   : TType extends ModifierTypes.ReplaceDamageType ? undefined
