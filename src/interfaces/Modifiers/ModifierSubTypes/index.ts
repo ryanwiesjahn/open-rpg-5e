@@ -15,7 +15,9 @@ export * from "./ProficiencyModifierSubType"
 export * from "./RangedWeaponAttackModifier"
 export * from './ReplaceDamageTypeModifierSubType'
 export * from "./SenseModifierSubType"
+export * from "./SetBaseModifierSubType"
 export * from "./SetModifierSubType"
 export * from "./SpeedReductionModifierSubType"
+export * from './StackingBonusModifierSubType'
 export * from "./VulnerabilityModifierSubType"
 export * from "./WeaponPropertyModifierSubType"

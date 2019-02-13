@@ -9,6 +9,7 @@ export enum ModifierTypes {
   Vulnerability = "vulnerability",
   Sense = "sense",
   Set = "set",
+  SetBase = "set-base",
   Language = "language",
   Proficiency = "proficiency",
   HalfProficiency = "half-proficiency",

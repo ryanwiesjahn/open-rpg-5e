@@ -17,6 +17,7 @@ export type ModifierSubType<TType>
   : TType extends ModifierTypes.Vulnerability ? ModifierSubTypes.VulnerabilityModifierSubType
   : TType extends ModifierTypes.Sense ? ModifierSubTypes.SenseModifierSubType
   : TType extends ModifierTypes.Set ? ModifierSubTypes.SetModifierSubType
+  : TType extends ModifierTypes.SetBase ? ModifierSubTypes.SetBaseModifierSubType
   : TType extends ModifierTypes.Language ? ModifierSubTypes.LanguageModifierSubType
   : TType extends ModifierTypes.Proficiency ? ModifierSubTypes.ProficiencyModifierSubType
   : TType extends ModifierTypes.HalfProficiency ? ModifierSubTypes.ProficiencyModifierSubType
@@ -34,8 +35,8 @@ export type ModifierSubType<TType>
   : TType extends ModifierTypes.Ignore ? ModifierSubTypes.IgnoreModifierSubType
   : TType extends ModifierTypes.EldritchBlast ? ModifierSubTypes.EldritchBlastModifierSubType
   : TType extends ModifierTypes.ReplaceDamageType ? ModifierSubTypes.ReplaceDamageTypeModifierSubType
-  : TType extends ModifierTypes.Protection ? undefined
-  : TType extends ModifierTypes.StackingBonus ? undefined
+  : TType extends ModifierTypes.Protection ? undefined   // TODO: How is this used?
+  : TType extends ModifierTypes.StackingBonus ? ModifierSubTypes.StackingBonusModifierSubType
   : null
 
 /* Test */
