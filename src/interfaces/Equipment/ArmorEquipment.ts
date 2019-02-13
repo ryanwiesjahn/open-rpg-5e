@@ -1,6 +1,6 @@
 import * as Types from "./../Types"
 import { Equipment } from './Equipment'
-import { ArmorClass } from '../Measurements/ArmorClass'
+import { ArmorClass } from '../Stats/ArmorClass'
 
 export interface ArmorEquipment extends Equipment {
   type: Types.ArmorEquipmentTypes
