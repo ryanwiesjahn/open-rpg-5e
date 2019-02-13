@@ -1,7 +1,9 @@
 
 export enum WeaponAttackTypes {
-  ShortbowAttacks = "shortbow-attacks",
-  LongbowAttacks = "longbow-attacks",
-  OneHandedMeleeAttacks = "one-handed-melee-attacks",
-  TwoHandedMeleeAttacks = "two-handed-melee-attacks",
+  NaturalAttack = 'natural-attack',
+  UnarmedAttack = 'unarmed-attack',
+  ShortbowAttack = "shortbow-attack",
+  LongbowAttacks = "longbow-attack",
+  OneHandedMeleeAttack = "one-handed-melee-attack",
+  TwoHandedMeleeAttack = "two-handed-melee-attack",
 }

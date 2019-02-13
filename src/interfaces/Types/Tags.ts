@@ -1,3 +1,4 @@
+// TODO: Should this be moved somewhere else?
 
 export enum Tags {
   Combat = "combat",
