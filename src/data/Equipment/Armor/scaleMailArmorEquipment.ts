@@ -1,4 +1,5 @@
 import * as Types from "../../../interfaces/Types"
+import * as Values from "../../../interfaces/Values"
 import { DataBundle } from "../../DataBundle"
 import { ArmorEquipment } from '../../../interfaces/Equipment/ArmorEquipment';
 
@@ -15,7 +16,7 @@ const data: ArmorEquipment = {
     unit: "lb",
   },
   tags: [
-    Types.Tags.Warding,
+    Values.Tags.Warding,
   ],
   description: "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.",
   armorClass: {

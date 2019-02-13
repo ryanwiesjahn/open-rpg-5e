@@ -19,12 +19,12 @@ export interface ProficiencyModifier extends Modifier<ModifierTypes.Proficiency>
 // TODO: Make this work
 export interface ChooseEquipmentProficiencyModifier extends Modifier<ModifierTypes.Proficiency> {
   subType: Types.SelectTypes.ChooseEquipment
-  equipmentId: string
-  equipmentChoiceIds: string[]
+  equipmentId: UUID
+  equipmentChoiceIds: UUID[]
 }
 
 // TODO: Make this work
 export interface SpecificEquipmentProficiencyModifier extends Modifier<ModifierTypes.Proficiency> {
   subType: Types.SelectTypes.SpecificEquipment
-  equipmentId: string
+  equipmentId: UUID
 }

@@ -1,7 +1,7 @@
 import { CharacterConfig } from "./CharacterConfig"
 
 export interface Character {
-  id: string
+  id: UUID
   name: string
   config: CharacterConfig
 }

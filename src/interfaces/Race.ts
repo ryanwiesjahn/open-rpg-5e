@@ -9,7 +9,7 @@ export interface RacialTrait {
 }
 
 export interface Race {
-  id: string
+  id: UUID
   version?: string
   name: string
   snippet?: string // Condensed, data-driven summary
@@ -19,7 +19,7 @@ export interface Race {
     description: string
   }
   size: {
-    racialSize: Types.RacialSizeTypes
+    racialSize: Types.CreatureSizeTypes
     description: string
   }
   age: string

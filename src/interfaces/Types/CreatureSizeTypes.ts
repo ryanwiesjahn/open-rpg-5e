@@ -1,5 +1,5 @@
 
-export enum RacialSizeTypes {
+export enum CreatureSizeTypes {
   Tiny = "tiny",
   Small = "small",
   Medium = "medium",

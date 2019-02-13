@@ -12,14 +12,15 @@ export * from "./BonusTypes"
 export * from "./ChangeTypes"
 export * from "./ConditionTypes"
 export * from './CreatureTypes'
+export * from './CreatureGroupTypes'
+export * from "./CreatureSizeTypes"
 export * from "./DamageTypes"
 export * from "./EquipmentTypes"
 export * from "./HitPointTypes"
-export * from './Level'
 export * from "./MiscTypes"
+export * from './MovementTypes'
 export * from "./PassiveSkillTypes"
 export * from "./ProficiencyTypes"
-export * from "./RacialSizeTypes"
 export * from "./RangeTypes"
 export * from './ResetTypes'
 export * from './RestrictionTypes'
@@ -29,6 +30,5 @@ export * from "./SightTypes"
 export * from "./SkillTypes"
 export * from "./SpeedTypes"
 export * from './SpellRangeTypes'
-export * from "./Tags"
 export * from "./WeaponAttackTypes"
 export * from "./WeaponPropertyTypes"

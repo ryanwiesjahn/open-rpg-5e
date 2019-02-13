@@ -9,11 +9,11 @@ interface FeatModifier<TSubType extends ModifierSubTypes.FeatModifierSubType> ex
 
 // TODO: Make this work
 export interface ChooseFeatModifier extends FeatModifier<Types.SelectTypes.ChooseFeat> {
-  featId: string
-  featChoiceIds: string[]
+  featId: UUID
+  featChoiceIds: UUID[]
 }
 
 // TODO: Make this work
 export interface SpecificFeatModifier extends FeatModifier<Types.SelectTypes.SpecificFeat> {
-  featId: string
+  featId: UUID
 }

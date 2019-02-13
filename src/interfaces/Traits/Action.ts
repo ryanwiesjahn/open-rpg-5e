@@ -1,5 +1,6 @@
 import * as Types from '../Types'
-import { Roll } from '../Measurements/Roll'
+import * as Values from '../Values'
+import * as Measurements from '../Measurements'
 
 export interface Action {
   actionType: Types.ActionTypes
@@ -9,12 +10,12 @@ export interface Action {
   isAttack?: boolean
   isAffectedByMartialArts?: boolean   // TODO: Copied from DnDB. Refers to Monk class Martial Arts trait. Should this be here?
   abilityScoreType?: Types.AbilityScoreTypes
-  level?: Types.Level
+  level?: Values.Levels
   isProficient?: boolean
   attackRange?: Types.AttackRangeTypes
   saveType?: Types.AbilityScoreTypes
   fixedSaveDC?: number  // If saveType is set
-  dice?: Roll
+  dice?: Measurements.Roll
   fixedValue?: number
   effectOnMiss?: string  // If attackRange is set
   effectOnSaveSuccess?: string  // If saveType is set
@@ -30,4 +31,5 @@ export interface Action {
   activationType?: Types.ActionActivationTypes
   activationTime?: number  // If activationType is time based
   resetType?: Types.ResetTypes
+  numberOfUses?: number
 }

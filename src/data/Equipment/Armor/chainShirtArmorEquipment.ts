@@ -1,4 +1,5 @@
 import * as Types from "../../../interfaces/Types"
+import * as Values from '../../../interfaces/Values'
 import { DataBundle } from "../../DataBundle"
 import { ArmorEquipment } from '../../../interfaces/Equipment/ArmorEquipment';
 
@@ -15,7 +16,7 @@ const data: ArmorEquipment = {
     unit: "lb",
   },
   tags: [
-    Types.Tags.Warding,
+    Values.Tags.Warding,
   ],
   description: "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.",
   armorClass: {

@@ -1,4 +1,5 @@
 import * as Types from "../../../interfaces/Types"
+import * as Values from '../../../interfaces/Values'
 import { DataBundle } from "../../DataBundle"
 import { ArmorEquipment } from '../../../interfaces/Equipment/ArmorEquipment';
 
@@ -15,7 +16,7 @@ const data: ArmorEquipment = {
     unit: "lb",
   },
   tags: [
-    Types.Tags.Warding,
+    Values.Tags.Warding,
   ],
   description: "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.",
   armorClass: {

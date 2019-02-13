@@ -11,11 +11,11 @@ export interface AllLanguageModifier extends LanguageModifier<Types.SelectTypes.
 
 // TODO: Make this work
 export interface ChooseLanguageModifier extends LanguageModifier<Types.SelectTypes.ChooseLanguage> {
-  languageId: string
-  languageChoiceIds: string[]
+  languageId: UUID
+  languageChoiceIds: UUID[]
 }
 
 // TODO: Make this work
 export interface SpecificLanguageModifier extends LanguageModifier<Types.SelectTypes.SpecificLanguage> {
-  languageId: string
+  languageId: UUID
 }

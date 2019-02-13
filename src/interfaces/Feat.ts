@@ -1,7 +1,7 @@
 
 // TODO: Complete this
 export interface Feat {
-  id: string
+  id: UUID
   version?: string
   name: string
   description: string

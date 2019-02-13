@@ -1,4 +1,5 @@
 import * as Types from "../../../interfaces/Types"
+import * as Values from "../../../interfaces/Values"
 import { DataBundle } from "../../DataBundle"
 import { ArmorEquipment } from '../../../interfaces/Equipment/ArmorEquipment';
 
@@ -15,7 +16,7 @@ const data: ArmorEquipment = {
     unit: "lb",
   },
   tags: [
-    Types.Tags.Warding,
+    Values.Tags.Warding,
   ],
   description: "Padded armor consists of quilted layers of cloth and batting.",
   armorClass: {

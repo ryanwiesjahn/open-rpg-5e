@@ -1,8 +1,8 @@
 import * as Types from "./../Types"
-import { Roll } from "./../Measurements/Roll"
+import * as Measurements from "./../Measurements"
 
 export interface Damage {
-  roll?: Roll
+  roll?: Measurements.Roll
   amount?: number
   damageType: Types.DamageTypes | Types.DamageTypes[]
 }

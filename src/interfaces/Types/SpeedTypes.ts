@@ -1,18 +1,18 @@
 
 export enum SpeedTypes {
   Speed = "speed",
-  SpeedBurrowing = "speed-burrowing",
-  SpeedClimbing = "speed-climbing",
-  SpeedFlying = "speed-flying",
-  SpeedSwimming = "speed-swimming",
-  SpeedWalking = "speed-walking",
+  BurrowingSpeed = "burrowing-speed",
+  ClimbingSpeed = "climbing-speed",
+  FlyingSpeed = "flying-speed",
+  SpeedSwimming = "swimming-speed",
+  WalkingSpeed = "walking-speed",
 }
 
 export enum InnateSpeedType {
   InnateSpeed = "innate-speed",
-  InnateSpeedBurrowing = "innate-speed-burrowing",
-  InnateSpeedClimbing = "innate-speed-climbing",
-  InnateSpeedFlying = "innate-speed-flying",
-  InnateSpeedSwimming = "innate-speed-swimming",
-  InnateSpeedWalking = "innate-speed-walking",
+  InnateBurrowingSpeed = "innate-burrowing-speed",
+  InnateClimbingSpeed = "innate-climbing-speed",
+  InnateFlyingSpeed = "innate-flying-speed",
+  InnateSwimmingSpeed = "innate-swimming-speed",
+  InnateWalkingSpeed = "innate-walking-speed",
 }

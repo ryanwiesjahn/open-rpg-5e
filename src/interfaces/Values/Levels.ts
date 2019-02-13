@@ -1,6 +1,5 @@
-// TODO: Should this be moved somewhere else?
 
-export enum Level {
+export enum Levels {
   One = 1,
   Two = 2,
   Three = 3,

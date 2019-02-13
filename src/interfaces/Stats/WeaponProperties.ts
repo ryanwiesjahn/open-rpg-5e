@@ -1,5 +1,5 @@
 import * as Types from "../Types"
-import { Roll } from '../Measurements/Roll'
+import * as Measurements from '../Measurements'
 
 export interface WeaponProperty {
   type: Types.WeaponPropertyTypes
@@ -65,5 +65,5 @@ export interface TwoHandedWeaponProperty extends WeaponProperty {
 
 export interface VersatileWeaponProperty extends WeaponProperty {
   type: Types.WeaponPropertyTypes.Versatile
-  twoHanded: Roll
+  twoHanded: Measurements.Roll
 }
