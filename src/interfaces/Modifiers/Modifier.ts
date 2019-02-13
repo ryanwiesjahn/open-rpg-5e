@@ -33,7 +33,7 @@ export type ModifierSubType<TType>
   : TType extends ModifierTypes.FavoredEnemy ? ModifierSubTypes.FavoredEnemyModifierSubType
   : TType extends ModifierTypes.Ignore ? ModifierSubTypes.IgnoreModifierSubType
   : TType extends ModifierTypes.EldritchBlast ? ModifierSubTypes.EldritchBlastModifierSubType
-  : TType extends ModifierTypes.ReplaceDamageType ? undefined
+  : TType extends ModifierTypes.ReplaceDamageType ? ModifierSubTypes.ReplaceDamageTypeModifierSubType
   : TType extends ModifierTypes.Protection ? undefined
   : TType extends ModifierTypes.StackingBonus ? undefined
   : null

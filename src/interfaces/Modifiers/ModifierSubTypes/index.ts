@@ -13,6 +13,7 @@ export * from "./MeleeWeaponAttackModifierSubType"
 export * from "./NaturalWeaponModifierSubType"
 export * from "./ProficiencyModifierSubType"
 export * from "./RangedWeaponAttackModifier"
+export * from './ReplaceDamageTypeModifierSubType'
 export * from "./SenseModifierSubType"
 export * from "./SetModifierSubType"
 export * from "./SpeedReductionModifierSubType"
