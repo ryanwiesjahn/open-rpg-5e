@@ -7,7 +7,7 @@ interface CarryingCapacityModifier<TSubType extends ModifierSubTypes.CarryingCap
   subType: TSubType
 }
 
-export interface RacialSizeCarryingCapacityModifier extends CarryingCapacityModifier<Types.RacialSizeType> {}
+export interface RacialSizeCarryingCapacityModifier extends CarryingCapacityModifier<Types.RacialSizeTypes> {}
 
 export interface MultiplierCarryingCapacityModifier extends CarryingCapacityModifier<"multiplier"> {
   amount: number

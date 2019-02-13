@@ -19,7 +19,7 @@ export interface Race {
     description: string
   }
   size: {
-    racialSize: Types.RacialSizeType
+    racialSize: Types.RacialSizeTypes
     description: string
   }
   age: string

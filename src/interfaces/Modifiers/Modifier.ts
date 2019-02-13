@@ -31,7 +31,7 @@ export type ModifierSubType<TType>
   : TType extends ModifierTypes.RangedWeaponAttack ? ModifierSubTypes.RangedWeaponAttackModifierSubType
   : TType extends ModifierTypes.WeaponProperty ? ModifierSubTypes.WeaponPropertyModifierSubType
   : TType extends ModifierTypes.FavoredEnemy ? ModifierSubTypes.FavoredEnemyModifierSubType
-  : TType extends ModifierTypes.Ignore ? undefined
+  : TType extends ModifierTypes.Ignore ? ModifierSubTypes.IgnoreModifierSubType
   : TType extends ModifierTypes.EldritchBlast ? undefined
   : TType extends ModifierTypes.ReplaceDamageType ? undefined
   : TType extends ModifierTypes.Protection ? undefined

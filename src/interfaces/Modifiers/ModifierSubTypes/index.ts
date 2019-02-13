@@ -5,6 +5,7 @@ export * from "./DamageModifierSubType"
 export * from "./ExpertiseModifierSubType"
 export * from './FavoredEnemyModifierSubType'
 export * from "./FeatModifierSubType"
+export * from './IgnoreModifierSubType'
 export * from "./ImmunityModifierSubType"
 export * from "./LanguageModifierSubType"
 export * from "./MeleeWeaponAttackModifierSubType"
