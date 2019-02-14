@@ -4,15 +4,18 @@ import * as Customization from '../Customization'
 
 export type SpellTraitType = Types.SelectTypes.Choose | Types.SelectTypes.Filter
 
-export type SpellTrait<TTraitType extends SpellTraitType> = {
+interface BaseSpellTrait<TTraitType extends SpellTraitType> {
   traitType: TTraitType
   customization?: Customization.SpellCustomization
   isInfinite?: boolean
 } 
-& TTraitType extends Types.SelectTypes.Choose ? {
-  choiceIds?: UUID[]
+
+interface ChooseSpellTrait extends BaseSpellTrait<Types.SelectTypes.Choose> {
+  choiceIds: UUID[]
 }
-: TTraitType extends Types.SelectTypes.Filter ? {
+
+interface FilterSpellTrait extends BaseSpellTrait<Types.SelectTypes.Filter> {
   filter: Filters.SpellFilter
 }
-: null
+
+export type SpellTrait = ChooseSpellTrait | FilterSpellTrait

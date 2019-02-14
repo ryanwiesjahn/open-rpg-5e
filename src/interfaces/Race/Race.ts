@@ -1,12 +1,7 @@
-import * as Types from "./Types"
-import { AbilityScores } from "./Stats/AbilityScores"
-import { Speed } from './Stats/Speed'
-
-export interface RacialTrait {
-  name: string
-  snippet: string // Condensed, data-driven summary
-  description: string
-}
+import * as Types from "../Types"
+import { AbilityScores } from "../Stats/AbilityScores"
+import { Speed } from '../Stats/Speed'
+import { RacialTrait } from './RacialTrait'
 
 export interface Race {
   id: UUID

@@ -3,14 +3,17 @@ import * as Filters from '../Filters'
 
 export type CreatureTraitType = Types.SelectTypes.Choose | Types.SelectTypes.Filter
 
-export type CreatureTrait<TTraitType extends CreatureTraitType> = {
+interface BaseCreatureTrait<TTraitType extends CreatureTraitType> {
   traitType: TTraitType
   creatureGroup: Types.CreatureGroupTypes
 }
-& TTraitType extends Types.SelectTypes.Choose ? {
+
+interface ChooseCreatureTrait extends BaseCreatureTrait<Types.SelectTypes.Choose> {
   choiceIds: UUID[]
 }
-: TTraitType extends Types.SelectTypes.Filter ? {
+
+interface FilterCreatureTrait extends BaseCreatureTrait<Types.SelectTypes.Filter> {
   filter: Filters.CreatureFilter
 }
-: null
+
+export type CreatureTrait = ChooseCreatureTrait | FilterCreatureTrait
