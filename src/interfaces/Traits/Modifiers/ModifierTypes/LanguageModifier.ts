@@ -10,12 +10,12 @@ interface LanguageModifier<TSubType extends ModifierSubTypes.LanguageModifierSub
 export interface AllLanguageModifier extends LanguageModifier<Types.SelectTypes.All> {}
 
 // TODO: Make this work
-export interface ChooseLanguageModifier extends LanguageModifier<Types.SelectTypes.ChooseLanguage> {
+export interface ChooseLanguageModifier extends LanguageModifier<Types.SelectTypes.Choose> {
   languageId: UUID
   languageChoiceIds: UUID[]
 }
 
 // TODO: Make this work
-export interface SpecificLanguageModifier extends LanguageModifier<Types.SelectTypes.SpecificLanguage> {
+export interface SpecificLanguageModifier extends LanguageModifier<Types.SelectTypes.Specific> {
   languageId: UUID
 }

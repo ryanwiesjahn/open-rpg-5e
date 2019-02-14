@@ -1,6 +1,6 @@
 import * as Types from "../../../Types"
 
 export type LanguageModifierSubType
-  = Types.SelectTypes.ChooseLanguage
-  | Types.SelectTypes.SpecificLanguage
+  = Types.SelectTypes.Choose
+  | Types.SelectTypes.Specific
   | Types.SelectTypes.All

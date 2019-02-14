@@ -18,13 +18,13 @@ export interface ExpertiseModifier extends Modifier<ModifierTypes.Expertise> {
 
 // TODO: Make this work
 export interface ChooseEquipmentExpertiseModifier extends Modifier<ModifierTypes.Expertise> {
-  subType: Types.SelectTypes.ChooseEquipment
+  subType: Types.SelectTypes.Choose
   equipmentId: UUID
   equipmentChoiceIds: UUID[]
 }
 
 // TODO: Make this work
 export interface SpecificEquipmentExpertiseModifier extends Modifier<ModifierTypes.Expertise> {
-  subType: Types.SelectTypes.SpecificEquipment
+  subType: Types.SelectTypes.Specific
   equipmentId: UUID
 }

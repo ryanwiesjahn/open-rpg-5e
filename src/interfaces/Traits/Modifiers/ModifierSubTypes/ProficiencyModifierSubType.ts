@@ -8,8 +8,8 @@ export type ProficiencyModifierSubType
   | Types.AttackTypes
   | Types.AbilityAttackTypes
   | Types.WeaponAttackTypes
-  | Types.SelectTypes.ChooseEquipment
-  | Types.SelectTypes.SpecificEquipment
+  | Types.SelectTypes.Choose
+  | Types.SelectTypes.Specific
 
 
 // TODO: HANDLE THESE
