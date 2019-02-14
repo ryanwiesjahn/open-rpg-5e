@@ -1,7 +1,7 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
+import * as Types from "../../../Types"
 
-export interface FavoredEnemyModifier extends Modifier<ModifierTypes.FavoredEnemy> {
+export interface FavoredEnemyModifier extends _Modifier<Types.ModifierTypes.FavoredEnemy> {
   subType: ModifierSubTypes.FavoredEnemyModifierSubType
 }

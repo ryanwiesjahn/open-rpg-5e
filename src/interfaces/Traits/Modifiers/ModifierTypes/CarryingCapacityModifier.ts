@@ -1,14 +1,17 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
 import * as Types from "../../../Types"
 
-interface CarryingCapacityModifier<TSubType extends ModifierSubTypes.CarryingCapacityModifierSubType> extends Modifier<ModifierTypes.CarryingCapacity> {
+interface _CarryingCapacityModifier<TSubType extends ModifierSubTypes.CarryingCapacityModifierSubType> extends _Modifier<Types.ModifierTypes.CarryingCapacity> {
   subType: TSubType
 }
 
-export interface RacialSizeCarryingCapacityModifier extends CarryingCapacityModifier<Types.CreatureSizeTypes> {}
+interface RacialSizeCarryingCapacityModifier extends _CarryingCapacityModifier<Types.CreatureSizeTypes> {}
 
-export interface MultiplierCarryingCapacityModifier extends CarryingCapacityModifier<"multiplier"> {
+interface MultiplierCarryingCapacityModifier extends _CarryingCapacityModifier<"multiplier"> {
   amount: number
 }
+
+export type CarryingCapacityModifier
+  = RacialSizeCarryingCapacityModifier
+  | MultiplierCarryingCapacityModifier

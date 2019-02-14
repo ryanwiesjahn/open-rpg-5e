@@ -1,9 +1,8 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
 import * as Types from "../../../Types"
 
-export interface ReplaceDamageTypeModifier extends Modifier<ModifierTypes.ReplaceDamageType> {
+export interface ReplaceDamageTypeModifier extends _Modifier<Types.ModifierTypes.ReplaceDamageType> {
   subType: ModifierSubTypes.ReplaceDamageTypeModifierSubType
   replaceWith: Types.DamageTypes
 }

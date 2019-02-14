@@ -1,8 +1,8 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
+import * as Types from "../../../Types"
 
-export interface StackingBonusModifier extends Modifier<ModifierTypes.StackingBonus> {
+export interface StackingBonusModifier extends _Modifier<Types.ModifierTypes.StackingBonus> {
   subType: ModifierSubTypes.StackingBonusModifierSubType
   // TODO: Anything else needed?
 }

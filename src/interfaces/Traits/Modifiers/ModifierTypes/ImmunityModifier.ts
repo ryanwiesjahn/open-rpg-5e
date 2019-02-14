@@ -1,7 +1,7 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
+import * as Types from "../../../Types"
 
-export interface ImmunityModifier extends Modifier<ModifierTypes.Immunity> {
+export interface ImmunityModifier extends _Modifier<Types.ModifierTypes.Immunity> {
   subType: ModifierSubTypes.ImmunityModifierSubType
 }

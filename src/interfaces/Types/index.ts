@@ -18,6 +18,7 @@ export * from "./DamageTypes"
 export * from "./EquipmentTypes"
 export * from "./HitPointTypes"
 export * from "./MiscTypes"
+export * from "./ModifierTypes"
 export * from './MovementTypes'
 export * from "./PassiveSkillTypes"
 export * from "./ProficiencyTypes"

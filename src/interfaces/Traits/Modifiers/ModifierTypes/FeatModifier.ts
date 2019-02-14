@@ -1,19 +1,22 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
 import * as Types from "../../../Types"
 
-interface FeatModifier<TSubType extends ModifierSubTypes.FeatModifierSubType> extends Modifier<ModifierTypes.Feat> {
+interface _FeatModifier<TSubType extends ModifierSubTypes.FeatModifierSubType> extends _Modifier<Types.ModifierTypes.Feat> {
   subType: TSubType
 }
 
 // TODO: Make this work
-export interface ChooseFeatModifier extends FeatModifier<Types.SelectTypes.Choose> {
+interface ChooseFeatModifier extends _FeatModifier<Types.SelectTypes.Choose> {
   featId: UUID
   featChoiceIds: UUID[]
 }
 
 // TODO: Make this work
-export interface SpecificFeatModifier extends FeatModifier<Types.SelectTypes.Specific> {
+interface SpecificFeatModifier extends _FeatModifier<Types.SelectTypes.Specific> {
   featId: UUID
 }
+
+export type FeatModifier
+  = ChooseFeatModifier
+  | SpecificFeatModifier

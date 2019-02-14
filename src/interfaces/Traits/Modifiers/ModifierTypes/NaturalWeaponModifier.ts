@@ -1,8 +1,8 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
+import * as Types from "../../../Types"
 
-export interface NaturalWeaponModifier extends Modifier<ModifierTypes.NaturalWeapon> {
+export interface NaturalWeaponModifier extends _Modifier<Types.ModifierTypes.NaturalWeapon> {
   // TODO: What is this? What needs to go here?
   subType: ModifierSubTypes.NaturalWeaponModifierSubType
 }

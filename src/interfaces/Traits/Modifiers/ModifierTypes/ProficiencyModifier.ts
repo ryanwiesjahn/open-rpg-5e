@@ -1,6 +1,5 @@
-import { ModifierTypes } from "../ModifierTypes"
 import * as ModifierSubTypes from "../ModifierSubTypes"
-import { Modifier } from "../Modifier"
+import { _Modifier } from "../Modifier"
 import * as Types from "../../../Types"
 
 type MainProficiencyModifierSubTypes
@@ -11,20 +10,29 @@ type MainProficiencyModifierSubTypes
   | Types.AttackTypes
   | Types.AbilityAttackTypes
   | Types.WeaponAttackTypes
-export interface ProficiencyModifier extends Modifier<ModifierTypes.Proficiency> {
-  subType: MainProficiencyModifierSubTypes
+
+interface _ProficiencyModifier<TSubType extends ModifierSubTypes.ProficiencyModifierSubType> extends _Modifier<Types.ModifierTypes.Proficiency> {
+  subType: TSubType
+}
+
+interface MainProficiencyModifier extends _ProficiencyModifier<MainProficiencyModifierSubTypes> {
   proficiencyType: Types.ProficiencyTypes
 }
 
 // TODO: Make this work
-export interface ChooseEquipmentProficiencyModifier extends Modifier<ModifierTypes.Proficiency> {
-  subType: Types.SelectTypes.Choose
+interface ChooseEquipmentProficiencyModifier extends _ProficiencyModifier<Types.SelectTypes.Choose> {
+  proficiencyType: Types.ProficiencyTypes
   equipmentId: UUID
   equipmentChoiceIds: UUID[]
 }
 
 // TODO: Make this work
-export interface SpecificEquipmentProficiencyModifier extends Modifier<ModifierTypes.Proficiency> {
-  subType: Types.SelectTypes.Specific
+interface SpecificEquipmentProficiencyModifier extends _ProficiencyModifier<Types.SelectTypes.Specific> {
+  proficiencyType: Types.ProficiencyTypes
   equipmentId: UUID
 }
+
+export type ProficiencyModifier
+  = MainProficiencyModifier
+  | ChooseEquipmentProficiencyModifier
+  | SpecificEquipmentProficiencyModifier

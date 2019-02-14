@@ -11,7 +11,7 @@ export interface RacialTrait {
   description: string
   characterLevelsWhereOptionsKnown?: number[]
   options: RacialTraitOption[]
-  modifiers: Modifier<any>[]
+  modifiers: Modifier[]
   spellTraits: SpellTrait[]
   actionTraits: ActionTrait[]
   creatureTraits: CreatureTrait[]

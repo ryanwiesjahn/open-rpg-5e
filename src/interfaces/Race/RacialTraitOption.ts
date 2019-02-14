@@ -1,5 +1,5 @@
 import * as Values from '../Values'
-import { Modifier } from '../Traits/Modifiers/Modifier'
+import { _Modifier } from '../Traits/Modifiers/Modifier'
 import { SpellTrait } from '../Traits/SpellTrait'
 import { ActionTrait } from '../Traits/ActionTrait'
 import { CreatureTrait } from '../Traits/CreatureTrait'
@@ -12,7 +12,7 @@ export interface RacialTraitOption {
   prerequisiteRacialTraitOptionId?: UUID
   requiredCharacterLevel?: Values.Levels
   isGranted?: boolean
-  modifiers: Modifier<any>[]
+  modifiers: _Modifier<any>[]
   spellTraits: SpellTrait[]
   actionTraits: ActionTrait[]
   creatureTraits: CreatureTrait[]
