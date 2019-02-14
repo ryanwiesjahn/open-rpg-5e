@@ -24,6 +24,7 @@ export * from "./ProficiencyTypes"
 export * from "./RangeTypes"
 export * from './ResetTypes'
 export * from './RestrictionTypes'
+export * from './RitualCastTypes'
 export * from "./SavingThrowTypes"
 export * from "./SelectTypes"
 export * from "./SightTypes"

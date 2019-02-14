@@ -28,8 +28,7 @@ export interface ActionTrait {
   areaOfEffectType?: Types.AreaOfEffectTypes
   areaOfEffectSize?: number  // If areaOfEffectType is set
   areaOfEffectSpecialFlag?: boolean  // If areaOfEffectType is set
-  activationType?: Types.ActionActivationTypes
-  activationTime?: number  // If activationType is time based
+  actionTime?: Measurements.ActionTime
   resetType?: Types.ResetTypes
   numberOfUses?: number
 }
