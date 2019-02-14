@@ -28,5 +28,6 @@ export interface Race {
     hasDarkvision: boolean
     description: string
   }
-  traits: RacialTrait[]
+  racialTraitIds: UUID[]
+  variants?: any[]  // TODO: Figure this out
 }

@@ -4,4 +4,5 @@ export interface Character {
   id: UUID
   name: string
   config: CharacterConfig
+  raceId: UUID
 }

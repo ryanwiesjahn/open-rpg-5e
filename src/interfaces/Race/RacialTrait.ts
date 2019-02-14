@@ -10,7 +10,7 @@ export interface RacialTrait {
   snippet: string // Condensed, data-driven summary
   description: string
   characterLevelsWhereOptionsKnown?: number[]
-  options: RacialTraitOption[]
+  racialTraitOptionIds: UUID[]
   modifiers: Modifier[]
   spellTraits: SpellTrait[]
   actionTraits: ActionTrait[]
