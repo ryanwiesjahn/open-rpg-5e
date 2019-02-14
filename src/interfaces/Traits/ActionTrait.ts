@@ -2,7 +2,7 @@ import * as Types from '../Types'
 import * as Values from '../Values'
 import * as Measurements from '../Measurements'
 
-export interface Action {
+export interface ActionTrait {
   actionType: Types.ActionTypes
   name?: string
   snippet?: string
