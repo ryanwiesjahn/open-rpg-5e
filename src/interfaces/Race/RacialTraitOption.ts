@@ -1,5 +1,5 @@
 import * as Values from '../Values'
-import { _Modifier } from '../Traits/Modifiers/Modifier'
+import { _Modifier } from '../Modifiers/Modifier'
 import { SpellTrait } from '../Traits/SpellTrait'
 import { ActionTrait } from '../Traits/ActionTrait'
 import { CreatureTrait } from '../Traits/CreatureTrait'
