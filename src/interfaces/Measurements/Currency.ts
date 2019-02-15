@@ -1,5 +1,5 @@
 
-export interface Cost {
+export interface Currency {
   cp?: number
   sp?: number
   ep?: number

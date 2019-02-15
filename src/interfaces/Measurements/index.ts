@@ -1,5 +1,5 @@
 export * from './ActionTime'
-export * from './Cost'
+export * from './Currency'
 export * from './Damage'
 export * from './Roll'
 export * from './Weight'

@@ -10,11 +10,14 @@ export * from "./AttackRollTypes"
 export * from "./AttackTypes"
 export * from "./BonusTypes"
 export * from "./ChangeTypes"
+export * from './CharacteristicTypes'
 export * from "./ConditionTypes"
+export * from './ContactTypes'
 export * from './CreatureTypes'
 export * from './CreatureGroupTypes'
 export * from "./CreatureSizeTypes"
 export * from "./DamageTypes"
+export * from './EquipmentGroupValueTypes'
 export * from "./EquipmentTypes"
 export * from "./HitPointTypes"
 export * from "./MiscTypes"

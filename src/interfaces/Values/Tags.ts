@@ -1,5 +1,6 @@
 
 export enum Tags {
+  Buff = "buff",
   Combat = "combat",
   Communication = "communication",
   Component = "component",
@@ -18,4 +19,8 @@ export enum Tags {
   Social = "social",
   Utility = "utility",
   Warding = "warding",
+  Guild = 'guild',
+  Monstrous = 'monstrous',
+  RacialFeat = 'racial-feat',
+  Religious = 'religious',
 }

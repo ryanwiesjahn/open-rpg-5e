@@ -7,7 +7,7 @@ export interface Equipment {
   version?: string
   name: string
   type: Types.EquipmentTypes
-  cost: Measurements.Cost
+  cost: Measurements.Currency
   weight: Measurements.Weight
   tags: Array<Values.Tags | string>
   description: string
