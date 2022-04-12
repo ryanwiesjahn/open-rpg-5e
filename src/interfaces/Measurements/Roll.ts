@@ -1,5 +1,6 @@
+import * as Values from '../Values'
 
 export interface Roll {
   count: number
-  die: number
+  die: Values.Dice
 }

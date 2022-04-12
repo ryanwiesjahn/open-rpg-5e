@@ -1,11 +1,11 @@
+import * as General from '../General'
 import * as Values from '../Values'
 import { _Modifier } from '../Modifiers/Modifier'
 import { SpellTrait } from '../Traits/SpellTrait'
 import { ActionTrait } from '../Traits/ActionTrait'
 import { CreatureTrait } from '../Traits/CreatureTrait'
 
-export interface RacialTraitOption {
-  id: UUID
+export interface RacialTraitOption extends General.Entry {
   name: string
   snippet: string // Condensed, data-driven summary
   description: string

@@ -1,9 +1,9 @@
 import * as Stats from '../Stats'
+import * as General from '../General'
 import { CharacterConfig } from "./CharacterConfig"
 import { CharacterInventory } from './CharacterInventory'
 
-export interface Character {
-  id: UUID
+export interface Character extends General.Entry {
   name: string
   config: CharacterConfig
   raceId: UUID

@@ -1,11 +1,9 @@
+import * as General from '../General'
 import * as Types from "../Types"
 import { AbilityScores } from "../Stats/AbilityScores"
 import { Speed } from '../Stats/Speed'
-import { RacialTrait } from './RacialTrait'
 
-export interface Race {
-  id: UUID
-  version?: string
+export interface Race extends General.Entry {
   name: string
   snippet?: string // Condensed, data-driven summary
   description: string

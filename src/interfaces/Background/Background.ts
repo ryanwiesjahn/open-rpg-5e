@@ -32,8 +32,7 @@ export interface BackgroundContacts {
   [Types.ContactTypes.NonContact]: string[]
 }
 
-export interface Background {
-  id: UUID
+export interface Background extends General.Entry {
   name: string
   introduction: string
   skillProficienciesDescription?: string
